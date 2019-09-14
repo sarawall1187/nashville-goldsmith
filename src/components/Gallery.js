@@ -6,7 +6,7 @@ const Gallery = () => {
 
 
     return(
-        <Carousel/>
+       <h1>Gallery Page</h1>
     )
 }
 

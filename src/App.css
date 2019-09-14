@@ -37,6 +37,9 @@
 .main {
   background-color: black;
   color: white;
+  background-image: url('/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .yellow {
@@ -54,4 +57,8 @@ nav.border-bottom.navbar.navbar-expand-lg.navbar-light.bg-transparent a:hover, :
 nav.border-bottom.navbar.navbar-expand-lg.navbar-light.bg-transparent span.navbar-brand {
   background-color: black;
   color: white;
+}
+
+ul li {
+  list-style: none;
 }

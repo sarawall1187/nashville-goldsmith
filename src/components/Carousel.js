@@ -1,4 +1,7 @@
 import React from 'react'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Carousel extends React.Component {
 
@@ -38,7 +41,31 @@ class Carousel extends React.Component {
 
     render() {
         return(
-            <p>Carousel works</p>
+        <Container className="p-0" fluid={true}> 
+            <Row className="justify-content-center py-5">
+            <h4 className="display-6 font-weight-light">Call for a quote:</h4>
+                <Col md={"auto"} sm={"auto"}>
+                  
+                    <ul className="yellow font-weight-light">
+                        <li>Diamond Replacement</li>
+                        <li>Diamond Setting</li>
+                        <li>Laser Repair</li>
+                        <li>Solder Ring Repair</li>
+                        <li>Buy Gold and Diamonds</li>
+                    </ul>
+                </Col>  
+                <Col md={"auto"} sm={"auto"}>
+                    <ul className="yellow font-weight-light">
+                        <li>Ring Sizing</li>
+                        <li>Ring Refinishing</li>
+                        <li>Antique Jewelry Repair</li>
+                        <li>Custom Jewelry Design</li>
+                        <li>Watch Repair including Rolex</li>
+                       
+                    </ul>
+                </Col>                              
+            </Row>
+        </Container>
         )
     }
 }
