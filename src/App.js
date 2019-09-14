@@ -40,35 +40,36 @@ class App extends React.Component {
  
 
   render() {
-  return (
-
-      <Router>
+    return (
+      <div className="main">
+      <Router >
       <Container className="p-0" fluid={true}>
         <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>Nashville Goldsmith</Navbar.Brand>
               <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" /> 
                     <Navbar.Collapse id="navbar-toggle">
-                      <Nav className="ml-auto">
+                      <Nav className="ml-auto main">
                         <Link className="nav-link" to="/">Home</Link>
                         <Link className="nav-link" to="/about">About the Owner</Link>
                         <Link className="nav-link" to="/contact">Contact Me</Link>
-                        <Link className="nav-link" to="/Gallery">Gallery</Link>
+                        <Link className="nav-link" to="/gallery">Gallery</Link>
                       </Nav>
                     </Navbar.Collapse> 
                   </Navbar>
 
-          {/* <Route path="/" exact render={() => <Home title={this.state.home.title} subTitle={this.state.home.subTitle} />} />
-          <Route path="/about" render={() => <About title={this.state.about.title} />} />
-          <Route path="/contact" render={() => <Contact title={this.state.contact.title} />} />
-          <Route path="/gallery" render={() => <Gallery title={this.state.gallery.title} />} />*/}
-          
+                <Route path="/" exact render={() => <Home title={this.state.home.title} subTitle={this.state.home.subTitle} />} />
+                <Route path="/about" render={() => <About title={this.state.about.title} />} />
+                <Route path="/contact" render={() => <Contact title={this.state.contact.title} />} />
+                <Route path="/gallery" render={() => <Gallery title={this.state.gallery.title} />} />
+                
           <Footer /> 
 
         </Container>
 
       </Router>
-
-  )}
+      </div>
+    )
+  }
 
 }
 
