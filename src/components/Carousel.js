@@ -2,70 +2,50 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup'; 
+import CardGroup from 'react-bootstrap/CardGroup';
+import CardDeck from 'react-bootstrap/CardDeck'
+
 
 class Carousel extends React.Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            // items: [
-            //     {
-            //         id: 0,
-            //         title: 'Dev Grub',
-            //         subTitle: 'The cookbook for developers',
-            //         imgSrc: devgrub,
-            //         link: 'https://devgrub.com',
-            //         selected: false
-            //     },
-            //     {
-            //         id: 1,
-            //         title: 'Garrett Love',
-            //         subTitle: 'YouTube channel',
-            //         imgSrc: youtube,
-            //         link: 'https://www.youtube.com/channel/UCxSITxL2JbF229OGCqieVZw',
-            //         selected: false
-            //     },
-            //     {
-            //         id: 2,
-            //         title: 'Evverest',
-            //         subTitle: 'A social network for developers',
-            //         imgSrc: evverest,
-            //         link: 'https://github.com/garrettlove8/evverest',
-            //         selected: false
-            //     },
-            // ]
-
-        }
-    }
-
-
     render() {
         return(
-        <Container className="p-0" fluid={true}> 
-            <Row className="justify-content-center py-5">
-            <h4 className="display-6 font-weight-light">Call for a quote:</h4>
-                <Col md={"auto"} sm={"auto"}>
-                  
-                    <ul className="yellow font-weight-light">
-                        <li>Diamond Replacement</li>
-                        <li>Diamond Setting</li>
-                        <li>Laser Repair</li>
-                        <li>Solder Ring Repair</li>
-                        <li>Buy Gold and Diamonds</li>
-                    </ul>
-                </Col>  
-                <Col md={"auto"} sm={"auto"}>
-                    <ul className="yellow font-weight-light">
-                        <li>Ring Sizing</li>
-                        <li>Ring Refinishing</li>
-                        <li>Antique Jewelry Repair</li>
-                        <li>Custom Jewelry Design</li>
-                        <li>Watch Repair including Rolex</li>
-                       
-                    </ul>
-                </Col>                              
-            </Row>
-        </Container>
+            <CardDeck>
+            {/* <Container>            
+            <Row className="center">
+                <Col> */}
+              <Card bg="transparent" text="white" style={{ width: '18rem' }}>
+                <Card.Body>
+                    <Card.Text as="h4">
+                      Call for quotes or an appointment for faster service.
+                    </Card.Text>
+                </Card.Body>
+                    <Card.Img variant="top" src="/jeweler.jpg" fluid/>
+            </Card>
+        {/* </Col>
+        <Col > */}
+            <Card bg="transparent" text="white" style={{ width: '18rem' }}>
+                <Card.Header as="h5">Services Provided:</Card.Header>
+                    <ListGroup variant="flush" bg="dark">
+                        <ListGroup.Item variant="dark">Diamond Replacement</ListGroup.Item>
+                        <ListGroup.Item variant="dark">Diamond Setting</ListGroup.Item>
+                        <ListGroup.Item variant="dark">Laser Repair</ListGroup.Item>
+                        <ListGroup.Item variant="dark">Solder Repair</ListGroup.Item>
+                        <ListGroup.Item variant="dark">Ring Sizing</ListGroup.Item>
+                        <ListGroup.Item variant="dark">Ring Refinishing</ListGroup.Item>
+                        <ListGroup.Item variant="dark">Antique Jewelry Repair</ListGroup.Item>
+                        <ListGroup.Item variant="dark">Custom Jewelry Design</ListGroup.Item>
+                        <ListGroup.Item variant="dark">Watch Repair including Rolex</ListGroup.Item>
+                        <ListGroup.Item variant="dark">Buy Gold and Diamonds</ListGroup.Item>
+                        <ListGroup.Item variant="dark">Plus much more!</ListGroup.Item>
+                    </ListGroup>
+            </Card>
+            {/* </Col>
+        </Row>
+        </Container> */}
+        </CardDeck>
         )
     }
 }

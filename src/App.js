@@ -23,7 +23,7 @@ class App extends React.Component {
        { title: "Gallery", path: '/gallery' }
       ],
       home: {
-        title: 'Nashville\'s Premiere Jeweler',
+        title: 'Nashville Goldsmith',
         subTitle: 'Specializing in Custom Designs and Antique Jewelry',
       },
       about: {
@@ -45,8 +45,8 @@ class App extends React.Component {
       <Router >
       <Container className="p-0" fluid={true}>
         <Navbar className="border-bottom" bg="transparent" variant="dark" expand="lg">
-            <Navbar.Brand>Nashville Goldsmith</Navbar.Brand>
-              <Navbar.Toggle bg="yellow" aria-controls="navbar-toggle" /> 
+            <Navbar.Brand className="text-muted">Matthew Walker, Owner</Navbar.Brand>
+              <Navbar.Toggle aria-controls="navbar-toggle" /> 
                     <Navbar.Collapse className="yellow" id="navbar-toggle">
                       <Nav className="ml-auto main">
                         <Link className="nav-link" to="/">Home</Link>

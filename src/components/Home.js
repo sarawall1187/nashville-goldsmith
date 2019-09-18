@@ -6,8 +6,6 @@ import Carousel from './Carousel';
 
 const Home = (props) => {
 
-
-
     return(
         <> 
         <Hero title={props.title} subTitle={props.subTitle}/>
