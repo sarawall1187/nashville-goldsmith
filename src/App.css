@@ -33,17 +33,17 @@
   }
 } */
 
-
+/* 
 .main {
-  background-color: black;
-  color: white;
-  background-image: url('/background.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  /* background-color: black;
+  color: white; */
+
 
 .yellow {
   color: #FFBF00;
+}
+.white {
+  color: white;
 }
 
 nav.border-bottom.navbar.navbar-expand-lg.navbar-light.bg-transparent a {
@@ -51,14 +51,9 @@ nav.border-bottom.navbar.navbar-expand-lg.navbar-light.bg-transparent a {
   color: white;
 }
 
-nav.border-bottom.navbar.navbar-expand-lg.navbar-light.bg-transparent a:hover, :active {
+nav.border-bottom.navbar.navbar-expand-lg.navbar-light.bg-transparent a:hover {
   color: #FFBF00;
 }
-nav.border-bottom.navbar.navbar-expand-lg.navbar-light.bg-transparent span.navbar-brand {
-  background-color: black;
-  color: white;
-}
-
 ul li {
   list-style: none;
 }

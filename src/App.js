@@ -44,10 +44,10 @@ class App extends React.Component {
       <div className="main">
       <Router >
       <Container className="p-0" fluid={true}>
-        <Navbar className="border-bottom" bg="transparent" expand="lg">
+        <Navbar className="border-bottom" bg="transparent" variant="dark" expand="lg">
             <Navbar.Brand>Nashville Goldsmith</Navbar.Brand>
-              <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" /> 
-                    <Navbar.Collapse id="navbar-toggle">
+              <Navbar.Toggle bg="yellow" aria-controls="navbar-toggle" /> 
+                    <Navbar.Collapse className="yellow" id="navbar-toggle">
                       <Nav className="ml-auto main">
                         <Link className="nav-link" to="/">Home</Link>
                         <Link className="nav-link" to="/about">About the Owner</Link>
