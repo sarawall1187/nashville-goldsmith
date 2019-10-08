@@ -5,28 +5,17 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup'; 
 import CardGroup from 'react-bootstrap/CardGroup';
-import CardDeck from 'react-bootstrap/CardDeck'
+import CardColumns from 'react-bootstrap/CardColumns'
+import Carousel from 'react-bootstrap/Carousel'
 
 
-class Carousel extends React.Component {
+class CarouselPage extends React.Component {
 
     render() {
         return(
-            <CardDeck>
-            {/* <Container>            
-            <Row className="center">
-                <Col> */}
-              <Card bg="transparent" text="white" style={{ width: '18rem' }}>
-                <Card.Body>
-                    <Card.Text as="h4">
-                      Call for quotes or an appointment for faster service.
-                    </Card.Text>
-                </Card.Body>
-                    <Card.Img variant="top" src="/jeweler.jpg" fluid/>
-            </Card>
-        {/* </Col>
-        <Col > */}
-            <Card bg="transparent" text="white" style={{ width: '18rem' }}>
+            <>
+            {/* <CardColumns>
+            <Card bg="transparent" text="white" border="light">
                 <Card.Header as="h5">Services Provided:</Card.Header>
                     <ListGroup variant="flush" bg="dark">
                         <ListGroup.Item variant="dark">Diamond Replacement</ListGroup.Item>
@@ -42,11 +31,86 @@ class Carousel extends React.Component {
                         <ListGroup.Item variant="dark">Plus much more!</ListGroup.Item>
                     </ListGroup>
             </Card>
-            {/* </Col>
-        </Row>
-        </Container> */}
-        </CardDeck>
+      
+        <Card className="bg-dark text-black" >
+                <Card.Img src="/jeweler.jpg" alt="Card image" />
+                <Card.ImgOverlay>
+                    <Card.Title>Call Us!</Card.Title>
+                    <Card.Text>
+                      We give quotes or an appointment for faster service.
+                    </Card.Text>
+                </Card.ImgOverlay>
+              </Card>
+        </CardColumns> */}
+
+
+
+     <Carousel className="carouselWidth">
+        <Carousel.Item >
+            <img
+            className="d-block w-100"
+            src="/jeweler.jpg"
+            alt="First slide"
+            />
+            <Carousel.Caption className="text-black">
+            <h2 className="text-black">Call Us!</h2>
+            <h4 className="text-black">We give quotes or an appointment for faster service.</h4>
+            </Carousel.Caption>
+        </Carousel.Item>
+         <Carousel.Item>
+            <img
+            className="d-block w-100"
+            src="jewelerworking.jpg"
+            alt="Third slide"
+            />
+
+            <Carousel.Caption>
+            <Card bg="transparent" text="white" border="light">
+            <Card.Header as="h5">Services Provided:</Card.Header>
+            <Card.Body>
+                <ul>
+                <li>Diamond Replacement</li>
+                <li>Diamond Setting</li>
+                <li>Laser Repair</li>
+                <li>Diamond Replacement</li>
+                <li>Diamond Replacement</li>
+                <li>Diamond Replacement</li>
+                <li>Diamond Replacement</li>
+                <li>Diamond Replacement</li>
+                <li>Diamond Replacement</li>
+                </ul>
+            </Card.Body>
+              {/* <ListGroup bg="transparent">
+                        <ListGroup.Item>Diamond Replacement</ListGroup.Item>
+                        <ListGroup.Item>Diamond Setting</ListGroup.Item>
+                        <ListGroup.Item>Laser Repair</ListGroup.Item>
+                        <ListGroup.Item>Solder Repair</ListGroup.Item>
+                        <ListGroup.Item>Ring Sizing</ListGroup.Item>
+                        <ListGroup.Item>Ring Refinishing</ListGroup.Item>
+                        <ListGroup.Item>Antique Jewelry Repair</ListGroup.Item>
+                        <ListGroup.Item>Custom Jewelry Design</ListGroup.Item>
+                        <ListGroup.Item>Watch Repair including Rolex</ListGroup.Item>
+                        <ListGroup.Item>Buy Gold and Diamonds</ListGroup.Item>
+                        <ListGroup.Item>Plus much more!</ListGroup.Item>
+                    </ListGroup> */}
+                    </Card>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+            className="d-block w-100"
+            src="bandspic.jpg"
+            alt="Third slide"
+            />
+
+            <Carousel.Caption>
+            <h3>Make Her Dreams Come True!</h3>
+            <p>We can make anything you can dream up!</p>
+            </Carousel.Caption>
+        </Carousel.Item>
+    </Carousel>
+    </>
         )
     }
 }
-export default Carousel
+export default CarouselPage

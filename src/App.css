@@ -39,6 +39,11 @@
   color: white; 
 } */
 
+.carouselWidth {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
 .yellow {
   color: #FFBF00;
 }

@@ -2,15 +2,15 @@ import React from 'react'
 import Hero from './Hero'
 
 
-import Carousel from './Carousel';
+import CarouselPage from './Carousel';
 
 const Home = (props) => {
 
     return(
         <> 
-        <Hero title={props.title} subTitle={props.subTitle}/>
+         <Hero title={props.title} subTitle={props.subTitle}/>
         
-     <Carousel/>   
+         <CarouselPage/>   
         </>
     )
 }
