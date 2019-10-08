@@ -40,12 +40,15 @@
 } */
 
 .carouselWidth {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 10%;
+  margin: 5%;
+
 }
 .yellow {
   color: #FFBF00;
+}
+
+.black {
+  color: black;
 }
 .white {
   color: white;
