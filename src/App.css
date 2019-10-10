@@ -40,20 +40,48 @@
 } */
 
 .carouselWidth {
-  margin: 5%;
+  margin: 2%;
 
 }
 
-@media (max-width: 480px) {
-  .carousel {
-    width:auto;
-    height:auto;
+@media (max-width: 565px) {
+
+  .servicesCard{
+    position: relative;
   }
+  .servicesList {
+    position: absolute;
+    height: 100%;
+  }
+
+    h3 {
+      font-size: .5em;
+    }
+    p {
+      font-size: .75em;
+    }
+    ul li {
+      font-size: .em;
+    }
+  
 }
 
-.cardPadding {
-  padding-top: 2%;
+@media (max-width: 700px) {
+  .card-header {
+    font-size: .75em;
+  }
+  h3 {
+    font-size: .5em;
+  }
+  p {
+    font-size: .75em;
+  }
+  ul li {
+    font-size: .75em;
+  }
+  
 }
+
 .yellow {
   color: #FFBF00;
 }

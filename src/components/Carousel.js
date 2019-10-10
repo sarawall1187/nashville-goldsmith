@@ -11,7 +11,7 @@ class CarouselPage extends React.Component {
             <>
 
 
-     <Carousel className="carouselWidth carousel">
+     <Carousel className="carouselWidth">
         <Carousel.Item >
             <img
             className="d-block w-100"
@@ -19,23 +19,24 @@ class CarouselPage extends React.Component {
             alt="First slide"
             />
             <Carousel.Caption>
-            <h2>Call Us!</h2>
-            <h4>We give quotes or an appointment for faster service.</h4>
+            <h3>Call Us!</h3>
+            <p>We give quotes or an appointment for faster service.</p>
             </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item  className="servicesCard">
             <img
             className="d-block w-100"
             src="jeweler.jpg"
             alt="Third slide"
             />
 
-            <Carousel.Caption>
+            <Carousel.Caption className="servicesList">
             <Card bg="transparent">
             <Card.Header as="h4" className="yellow">Services Provided:</Card.Header>
             <Card.Body className="black" >
-                <ul>
+                
+               <ul>
                 <li>Diamond Replacement</li>
                 <li>Diamond Setting</li>
                 <li>Laser Repair</li>
