@@ -8,8 +8,7 @@ const Home = (props) => {
 
     return(
         <> 
-         <Hero title={props.title} subTitle={props.subTitle}/>
-        
+         <Hero title={props.title} subTitle={props.subTitle}/>  
          <CarouselPage/>   
         </>
     )
