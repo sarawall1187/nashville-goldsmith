@@ -48,6 +48,7 @@
 
   .servicesCard{
     position: relative;
+    height: 120%;
   }
   .servicesList {
     position: absolute;
@@ -61,7 +62,7 @@
       font-size: .75em;
     }
     ul li {
-      font-size: .em;
+      font-size: .5em;
     }
   
 }

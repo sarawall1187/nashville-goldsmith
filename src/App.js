@@ -45,7 +45,7 @@ class App extends React.Component {
       <Router >
       <Container className="p-0" fluid={true}>
         <Navbar className="border-bottom" bg="transparent" variant="dark" expand="lg">
-            <Navbar.Brand className="text-muted">Matthew Walker, Owner</Navbar.Brand>
+            <Navbar.Brand className="text-muted">Matthew Walker, Owner  <a className="yellow" href="tel:615-426-1733">615-426-1733</a></Navbar.Brand>
               <Navbar.Toggle aria-controls="navbar-toggle" /> 
                     <Navbar.Collapse className="yellow" id="navbar-toggle">
                       <Nav className="ml-auto main">

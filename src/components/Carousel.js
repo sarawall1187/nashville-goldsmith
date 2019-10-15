@@ -20,6 +20,7 @@ class CarouselPage extends React.Component {
             />
             <Carousel.Caption>
             <h3>Call Us!</h3>
+            <h4><a className="yellow" href="tel:615-426-1733">615-426-1733</a></h4>
             <p>We give quotes or an appointment for faster service.</p>
             </Carousel.Caption>
         </Carousel.Item>
