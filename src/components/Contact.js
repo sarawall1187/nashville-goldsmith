@@ -3,6 +3,8 @@ import Hero from "../components/Hero";
 import Form from "react-bootstrap/form";
 import { Button } from "react-bootstrap";
 
+import Axios from "axios";
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -30,8 +32,28 @@ class Contact extends React.Component {
 
     this.setState({
       disabled: true,
-      emailSent: true,
     });
+
+    Axios.post("http://localhost:3030/api/email", this.state)
+      .then((res) => {
+        if (res.data.success) {
+          this.setState({
+            disabled: false,
+            emailSent: true,
+          });
+        } else {
+          this.setState({
+            disabled: false,
+            emailSent: false,
+          });
+        }
+      })
+      .catch((err) => {
+        this.setState({
+          disabled: false,
+          emailSent: false,
+        });
+      });
   };
 
   render() {
