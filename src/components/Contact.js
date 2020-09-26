@@ -34,7 +34,7 @@ class Contact extends React.Component {
       disabled: true,
     });
 
-    Axios.post("http://localhost:3030/api/email", this.state)
+    Axios.post("http://localhost:3000/api/email", this.state)
       .then((res) => {
         if (res.data.success) {
           this.setState({
@@ -49,6 +49,7 @@ class Contact extends React.Component {
         }
       })
       .catch((err) => {
+        console.log(err);
         this.setState({
           disabled: false,
           emailSent: false,
@@ -60,9 +61,11 @@ class Contact extends React.Component {
     return (
       <div>
         <Hero title={this.props.title} />
-        <Form onSubmit={this.handleSubmit}>
+        <Form onSubmit={this.handleSubmit} className="form">
           <Form.Group>
-            <Form.Label htmlFor="full-name">Full Name</Form.Label>
+            <Form.Label htmlFor="full-name" className="font-weight-bold yellow">
+              Full Name
+            </Form.Label>
             <Form.Control
               id="full-name"
               name="name"
@@ -72,7 +75,9 @@ class Contact extends React.Component {
             />
           </Form.Group>
           <Form.Group>
-            <Form.Label htmlFor="email">Email</Form.Label>
+            <Form.Label htmlFor="email" className="font-weight-bold yellow">
+              Email
+            </Form.Label>
             <Form.Control
               id="email"
               name="email"
@@ -82,7 +87,9 @@ class Contact extends React.Component {
             />
           </Form.Group>
           <Form.Group>
-            <Form.Label htmlFor="message">Message</Form.Label>
+            <Form.Label htmlFor="message" className="font-weight-bold yellow">
+              Message
+            </Form.Label>
             <Form.Control
               id="message"
               name="message"
