@@ -31,10 +31,12 @@
     transform: rotate(360deg);
   }
 } */
-
-/* .main {
- background-color: black;
-  color: white; 
+/* 
+.main {
+  background-color: black;
+  background-image: url("/whitediamond.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 } */
 
 .carouselWidth {
@@ -111,11 +113,6 @@ nav.border-bottom.navbar.navbar-expand-lg.navbar-light.bg-transparent a:hover {
 ul li {
   list-style: none;
 }
-
-/* .success-msg {
-  color: white;
-  padding: 1%, 2%;
-} */
 
 .success-msg {
   color: red;
